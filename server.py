@@ -13,11 +13,9 @@ def root_folder():
 # def home_folder():
 #     return render_template('index.html')
 
-
 # @app.route('/works.html')
 # def works():
 #     return render_template('works.html')
-
 
 # @app.route('/work.html')
 # def work():
@@ -32,7 +30,6 @@ def root_folder():
 # @app.route('/contact.html')
 # def contact():
 #     return render_template('contact.html')
-
 
 # copying and pasting the app.routes is not efficient. so use the below to make it dynamically generated
 @app.route('/<string:page_name>')
@@ -68,7 +65,6 @@ def write_to_csv(data):
             database_csv,  delimiter=',', quotechar='\'', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow([email, subject, message])
 
-
 @app.route('/submit_form', methods=['GET', 'POST'])
 def submit_form():
     if request.method == 'POST':
@@ -83,4 +79,4 @@ def submit_form():
 #   - create project on gh
 #   - clone proj into local folder
 #   - copy important files into local proj folder
-#   -
+
