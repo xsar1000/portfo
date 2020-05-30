@@ -79,4 +79,6 @@ def submit_form():
 #   - create project on gh
 #   - clone proj into local folder
 #   - copy important files into local proj folder
-
+@app.route('/admin')
+def admin():
+    return 1
