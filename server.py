@@ -81,4 +81,5 @@ def submit_form():
 #   - copy important files into local proj folder
 @app.route('/admin')
 def admin():
-    return 1
+    s = 1 + 2
+    return s
